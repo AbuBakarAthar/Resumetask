@@ -71,7 +71,7 @@ const About = () => {
                 }}
               >
                 <div className="stat-icon">
-                  <stat.icon size={24} />
+                  <stat.icon size={32} />
                 </div>
                 <div className="stat-info">
                   <span className="stat-value">{stat.value}</span>
@@ -138,11 +138,11 @@ const About = () => {
         }
 
         .stat-card {
-          background: var(--secondary-bg);
+          background: var(--secondary-bg, #19202b);
           border-radius: 16px;
           padding: 2rem;
           text-align: center;
-          border: 1px solid var(--border-color);
+          border: 1px solid var(--border-color, #23304a);
           transition: all 0.3s ease;
           position: relative;
           overflow: hidden;
@@ -155,7 +155,7 @@ const About = () => {
           left: 0;
           width: 100%;
           height: 2px;
-          background: linear-gradient(90deg, var(--accent-blue), var(--accent-teal));
+          background: linear-gradient(90deg, var(--accent-blue, #3b82f6), var(--accent-teal, #14b8a6));
           transform: scaleX(0);
           transition: transform 0.3s ease;
         }
@@ -168,7 +168,7 @@ const About = () => {
           width: 60px;
           height: 60px;
           border-radius: 50%;
-          background: linear-gradient(135deg, var(--accent-blue), var(--accent-teal));
+          background: linear-gradient(135deg, var(--accent-blue, #3b82f6), var(--accent-teal, #14b8a6));
           display: flex;
           align-items: center;
           justify-content: center;
@@ -180,12 +180,12 @@ const About = () => {
           display: block;
           font-size: 2rem;
           font-weight: 700;
-          color: var(--accent-teal);
+          color: var(--accent-teal, #14b8a6);
           margin-bottom: 0.5rem;
         }
 
         .stat-label {
-          color: var(--text-secondary);
+          color: var(--text-secondary, #94a3b8);
           font-size: 0.9rem;
         }
 
@@ -197,7 +197,7 @@ const About = () => {
           font-size: 2rem;
           font-weight: 700;
           margin-bottom: 2rem;
-          color: var(--text-primary);
+          color: var(--text-primary, #e2e8f0);
         }
 
         .highlights-grid {
@@ -223,7 +223,7 @@ const About = () => {
         .highlight-number {
           font-size: 3rem;
           font-weight: 700;
-          background: linear-gradient(135deg, var(--accent-blue), var(--accent-teal));
+          background: linear-gradient(135deg, var(--accent-blue, #3b82f6), var(--accent-teal, #14b8a6));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -231,7 +231,7 @@ const About = () => {
         }
 
         .highlight-text {
-          color: var(--text-secondary);
+          color: var(--text-secondary, #94a3b8);
           font-weight: 500;
         }
 
