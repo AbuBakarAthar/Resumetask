@@ -36,18 +36,10 @@ const About = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            // ...existing code...
-<motion.div
-  className="about-text"
-  initial={{ opacity: 0, x: -50 }}
-  animate={inView ? { opacity: 1, x: 0 } : {}}
-  transition={{ duration: 0.8, delay: 0.2 }}
->
-  <p>
-    Experienced DevOps & SRE engineer with 7+ years designing, automating, and scaling secure cloud infrastructures on AWS, Azure, and GCP. Skilled in cloud architecture, CI/CD, Infrastructure as Code, and container platforms. Proven track record in boosting reliability, deployment speed, and cost efficiency for modern tech teams.
-  </p>
-</motion.div>
-// ...existing code...
+            <p>
+              Experienced DevOps & SRE engineer with 7+ years designing, automating, and scaling secure cloud infrastructures on AWS, Azure, and GCP. Skilled in cloud architecture, CI/CD, Infrastructure as Code, and container platforms. Proven track record in boosting reliability, deployment speed, and cost efficiency for modern tech teams.
+            </p>
+          </motion.div>
           <motion.div
             className="about-stats"
             initial={{ opacity: 0, x: 50 }}
@@ -61,7 +53,7 @@ const About = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.05,
                   boxShadow: '0 10px 30px rgba(59, 130, 246, 0.2)'
                 }}
