@@ -36,22 +36,18 @@ const About = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p>
-              Versatile DevOps & Site Reliability Engineer with 7+ years of hands-on experience designing, 
-              automating, and scaling secure, cloud-native infrastructures across AWS, Azure, and GCP. 
-              Strong foundation in cloud architecture, distributed systems, and modern automation practices, 
-              with proven expertise in Infrastructure as Code (Terraform, Ansible), CI/CD automation, and 
-              containerized platforms with Docker and Kubernetes.
-            </p>
-            <p>
-              Adept at improving system reliability, observability, and release velocity by applying modern 
-              SRE methodologies and performance tuning. Delivered measurable impact including 40% faster 
-              deployments, 30% greater reliability, and significant cloud cost savings. Well-versed in cloud 
-              security and compliance (SOC2, HIPAA), I collaborate across teams and provide technical 
-              leadership to deliver infrastructure solutions that balance business goals with technical excellence.
-            </p>
-          </motion.div>
-
+            // ...existing code...
+<motion.div
+  className="about-text"
+  initial={{ opacity: 0, x: -50 }}
+  animate={inView ? { opacity: 1, x: 0 } : {}}
+  transition={{ duration: 0.8, delay: 0.2 }}
+>
+  <p>
+    Experienced DevOps & SRE engineer with 7+ years designing, automating, and scaling secure cloud infrastructures on AWS, Azure, and GCP. Skilled in cloud architecture, CI/CD, Infrastructure as Code, and container platforms. Proven track record in boosting reliability, deployment speed, and cost efficiency for modern tech teams.
+  </p>
+</motion.div>
+// ...existing code...
           <motion.div
             className="about-stats"
             initial={{ opacity: 0, x: 50 }}
